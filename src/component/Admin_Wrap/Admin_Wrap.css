@@ -1,0 +1,10 @@
+#wrapper {
+    background: var(--ui-primary-2, #F2F2F2);
+    height: 1401px;
+    width: 1280px;
+    flex: 1 0 0;
+    float: left;
+    position: absolute;
+    display: inline-block;
+    margin: 0 0 0 280px;
+}
