@@ -5,7 +5,6 @@ function Admin_Wrap() {
 
     return(
         <div id={'wrapper'}>
-
         </div>
     )
 }
