@@ -1,0 +1,118 @@
+.calendarWrapper {
+    display: inline-block;
+    position: absolute;
+    float: right;
+    transform: translate(830px, 180px);
+    z-index: 3;
+}
+.react-datepicker__input-container > input{
+    width: 142px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.80);
+    margin-right: 80px;
+    display: flex;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-text-balck, #1C1C1C);
+
+    /* Tab_20 SB */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
+
+.react-datepicker {
+    left: -40px;
+}
+
+.endDate {
+    margin-right: -100px;
+    display: inline-block;
+    position: static;
+}
+
+#endSpan {
+    width: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: absolute;
+    display: inline-block;
+    color: var(--text-text-grey-2, #737579);
+
+    /* Body_18 Med */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+.startDate{
+    margin-right: 0px;
+    display: inline-block;
+    position: static;
+}
+
+#startSpan {
+    margin-left: -60px;
+    margin-top: 10px;
+    width: 50px;
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    color: var(--text-text-grey-2, #737579);
+
+    /* Body_18 Med */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+
+}
+
+#maximum {
+    width: 142px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.80);
+    display: inline-block;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-text-balck, #1C1C1C);
+
+    /* Tab_20 SB */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    margin-top: 70px;
+}
+#maxSpan {
+    width: 70px;
+    margin-left: 20px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 80px;
+
+    color: var(--text-text-grey-2, #737579);
+
+    /* Body_18 Med */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
