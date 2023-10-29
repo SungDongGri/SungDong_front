@@ -1,6 +1,11 @@
-#Wrapper {
-    padding: 25px 45px 5px 55px;
 
+#Wrapper {
+    display: block;
+    position: absolute;
+    padding: 25px 45px 5px 55px;
+    /*width: 95vw;*/
+    /*box-sizing: content-box;*/
+    /*transform: translate(0,0) scale(0.85);*/
 }
 #mento-Menagement{
     display: inline-block;
@@ -75,4 +80,95 @@
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 30px */
+}
+
+#startMentoring {
+    position: absolute;
+    z-index: 1;
+    transform: translate(1200px, 180px);
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--ui-primary, #606672);
+    color: var(--text-text-grey, #C7CAD1);
+
+    /* Tab_20 SB */
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
+
+#placehorder {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    transform: translate(800px, 180px);
+    color: var(--text-text-grey, #C7CAD1);
+
+    /* Body_18 Med */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+#placehorder2 {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    transform: translate(800px, 280px);
+    color: var(--text-text-grey, #C7CAD1);
+
+    /* Body_18 Med */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+#mentoList {
+    display: inline-block;
+    position: absolute;
+    z-index: 3;
+    transform: translate(350px, 380px);
+    color: var(--text-text-grey-2, #737579);
+
+    /* Label_16 Reg */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+
+.submit{
+    position: absolute;
+    z-index: 1;
+    transform: translate(80px, 1200px);
+    display: inline-block;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    right: 22px;
+    bottom: 97px;
+    background: #FFF;
+
+    color: var(--text-text-balck, #1C1C1C);
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px; /* 88.889% */
+
+    outline : none;
+    border: none;
 }

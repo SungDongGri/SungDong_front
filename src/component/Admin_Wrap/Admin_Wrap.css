@@ -1,7 +1,32 @@
+/*@media screen and (max-width: 1400px){*/
+/*    #wrapper {*/
+/*        width: 95%;*/
+/*        background: var(--ui-primary-2, #F2F2F2);*/
+/*        height: 1401px;*/
+/*        flex: 1 0 0;*/
+/*        float: left;*/
+/*        position: absolute;*/
+/*        display: inline-block;*/
+/*        margin: 0 0 0 280px;*/
+/*    }*/
+/*}*/
+/*@media screen and (min-width: 1401px){*/
+/*    #wrapper {*/
+/*        background: var(--ui-primary-2, #F2F2F2);*/
+/*        height: 1401px;*/
+/*        width: 1140px;*/
+/*        flex: 1 0 0;*/
+/*        float: left;*/
+/*        position: absolute;*/
+/*        display: inline-block;*/
+/*        margin: 0 0 0 280px;*/
+/*    }*/
+/*}*/
+
 #wrapper {
     background: var(--ui-primary-2, #F2F2F2);
     height: 1401px;
-    width: 1140px;
+    width: 1100px;
     flex: 1 0 0;
     float: left;
     position: absolute;
