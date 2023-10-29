@@ -4,8 +4,11 @@ import './Admin_Wrap.css';
 function Admin_Wrap() {
 
     return(
-        <div id={'wrapper'}>
+        <div>
+            <div id={'wrapper'}>
+            </div>
         </div>
+
     )
 }
 
