@@ -1,0 +1,132 @@
+#listWrapper {
+    width: 1000px;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    transform: translate(385px, 430px);
+    float: left;
+}
+#listTitle {
+
+    transform: translate(0, 40px);
+}
+
+#listTitle > span {
+    margin-right: 100px;
+    color: var(--text-text-grey-2, #737579);
+
+    /* TableLabel_16 SB */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    transform: translate(0, 20px);
+}
+
+#checkEx{
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    transform: translate(-35px, 5px);
+}
+
+#btnList {
+    display: inline-block;
+    position: relative;
+    transform: translate(600px, -40px);
+    vertical-align: center;
+
+}
+#btnList > span {
+    display: flex;
+    float: left;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    color: var(--text-text-balck, #1C1C1C);
+    margin-right: 20px;
+    /* Body_18 Med */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
+
+#btnList > button {
+    display: flex;
+    float: left;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: var(--ui-primary, #606672);
+    color: var(--text-text-grey, #C7CAD1);
+
+    /* Tab_20 SB */
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+}
+#checkBox {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF;
+    transform: translate(-38px, 5px);
+
+}
+
+#participant_List {
+    margin-top: 40px;
+    float: left;
+
+}
+
+#participant_List > span {
+    margin: 0 90px 0 10px;
+    color: var(--text-text-balck, #1C1C1C);
+    float: left;
+
+    /* Body_20Reg */
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+
+
+
+#participant_List > button {
+    margin : 0 45px 0 10px;
+    display: flex;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #FFF;
+    color: var(--text-text-balck, #1C1C1C);
+    float: left;
+    border: none;
+
+    /* Body_18 Med */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+}
