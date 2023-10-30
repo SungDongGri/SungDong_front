@@ -5,11 +5,11 @@ const TitleWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 8vw;
+  padding: 0 20vw;
   height: 240px;
   width: 100%;
   box-sizing: border-box;
-  background-color: #606672;
+  background-color: #0AAAEF;
 `
 
 const SubTitle = styled.p`

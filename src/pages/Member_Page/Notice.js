@@ -16,7 +16,7 @@ const Notice_Body_Wrap = styled.div`
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
-  padding: 30px 15vw;
+  padding: 30px 20vw;
 `
 
 const Notice_Body_Title = styled.div`

@@ -64,12 +64,32 @@ const LoginBtn = styled.button`
 const Header = () => {
     const navigate = useNavigate();
 
+    function moveHome(){
+        navigate('/Home');
+    }
+
     function moveMentoring(){
         navigate('/Mentoring');
     }
 
+    function moveEducation(){
+        navigate('/Education');
+    }
+
+    function moveProgram(){
+        navigate('/Request_Program');
+    }
+
+    function moveMypage(){
+        navigate('/Mypage');
+    }
+
     function moveNotice(){
         navigate('/Notice');
+    }
+
+    function moveLogin(){
+        navigate('/Login');
     }
 
     return(
@@ -79,16 +99,16 @@ const Header = () => {
                     <LogoImage src={LOGO} />
                 </LogoWrap>
                 <NavWrap>
-                    <NavBox><NavLink>Home</NavLink></NavBox>
+                    <NavBox><NavLink onClick={moveHome}>Home</NavLink></NavBox>
                     <NavBox><NavLink onClick={moveMentoring}>멘토링</NavLink></NavBox>
-                    <NavBox><NavLink>교육 프로그램</NavLink></NavBox>
-                    <NavBox><NavLink>프로그램 요청</NavLink></NavBox>
-                    <NavBox><NavLink>마이페이지</NavLink></NavBox>
+                    <NavBox><NavLink onClick={moveEducation}>교육 프로그램</NavLink></NavBox>
+                    <NavBox><NavLink onClick={moveProgram}>프로그램 요청</NavLink></NavBox>
+                    <NavBox><NavLink onClick={moveMypage}>마이페이지</NavLink></NavBox>
                     <NavBox><NavLink onClick={moveNotice}>공지사항</NavLink></NavBox>
                 </NavWrap>
             </LeftHeaderWrap>
             <ButtonWrap>
-                <LoginBtn>로그인</LoginBtn>
+                <LoginBtn onClick={moveLogin}>로그인</LoginBtn>
             </ButtonWrap>
         </Container>
     )

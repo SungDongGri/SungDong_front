@@ -22,6 +22,8 @@ const InputWrap = styled.div`
 
 const InputName = styled.p`
   margin: 0 0 8px 0;
+  color: #737978;
+  font-weight: 500;
 `
 
 const Input = styled.input`
@@ -29,8 +31,14 @@ const Input = styled.input`
   height: 40px;
   padding: 0 10px;
   border-radius: 8px;
-  background-color: #F2F2F2;
+  box-sizing: border-box;
+  background-color: #F1F7FA;
   border: none;
+  margin-bottom: 5px;
+
+  ::placeholder {
+    color: green;
+  }
 `
 
 const RadioWrap = styled.div`
@@ -43,11 +51,23 @@ const RadioInput = styled.input`
   margin: 50px 5px 0 30px;
 `
 
-const Label = styled.label`
-  //padding-top: 30px;
+const Label = styled.label``
+
+const ButtonWrap = styled.div`
+  display: flex;
 `
 
-const Input_Wrap = ({ name, holder, radio1, radio2 }) => {
+const Button = styled.button`
+  margin: 35px 5px 0 30px;
+  padding: 0 12px;
+  background-color: #C6EEFF;
+  border: none;
+  border-radius: 8px;
+  color: #737978;
+  height: 35px;
+`
+
+const Input_Wrap = ({ name, holder, radio1, radio2, button }) => {
     return(
         <>
         {  radio1 ?
@@ -66,8 +86,17 @@ const Input_Wrap = ({ name, holder, radio1, radio2 }) => {
                             <Label for={radio2}>{radio2}</Label>
                         </RadioLabelWrap>
                     </RadioWrap>
-                </InputBigWrap>
-                :
+                </InputBigWrap> :
+                button ?
+                <InputBigWrap>
+                    <InputTwoWrap>
+                        <InputName>{ name }</InputName>
+                        <Input placeholder={ holder }></Input>
+                    </InputTwoWrap>
+                    <ButtonWrap>
+                        <Button>{ button }</Button>
+                    </ButtonWrap>
+                </InputBigWrap> :
                 <InputWrap>
                     <InputName>{ name }</InputName>
                     <Input placeholder={ holder }></Input>
