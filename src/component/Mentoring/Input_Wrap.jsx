@@ -35,10 +35,6 @@ const Input = styled.input`
   background-color: #F1F7FA;
   border: none;
   margin-bottom: 5px;
-
-  ::placeholder {
-    color: green;
-  }
 `
 
 const RadioWrap = styled.div`
