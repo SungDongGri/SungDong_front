@@ -24,7 +24,7 @@ const ProgramCard = styled.div`
   border-radius: 12px;
   padding: 40px;
   box-sizing: border-box;
-  margin: 30px 0;
+  margin: 60px 0;
 `
 
 const ProgramTitle = styled.h2``

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import Header from '../../component/Header/Header';
 import Title from '../../component/Title_Wrap/Title_Box';
@@ -20,32 +20,24 @@ const ProgramNav = styled.div`
   padding: 0 20vw;
 `
 
-const Sungdong = styled.div`
+const Tab = styled.div`
+  margin-top: 20px;
   width: 49%;
   height: 80px;
   color: #1C1C1C;
   font-weight: 700;
+  font-size: 19px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 3px solid #0AAAEF;
-`
+  border-bottom: 3px solid ${props => (props.active ? '#0AAAEF' : 'transparent')};
 
-const Seoul = styled.div`
-  width: 49%;
-  height: 80px;
-  color: #1C1C1C;
-  font-weight: 700;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `
 
 const ProgramBoxWrap = styled.div`
   padding: 0 20vw;
-  display: flex;
+  display: flex; 
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 15px;
@@ -63,26 +55,51 @@ const ProgramBox = styled.div`
 `
 
 const Education = () => {
+    const [tabName, showTabName] = useState('Sungdong');
     return(
         <Container>
             <Header />
             <Title subTitle="여러분을 위한 프로그램이 모두 모였다!" mainTitle="교육 프로그램"/>
             <EducationBody>
                 <ProgramNav>
-                    <Sungdong>성동구</Sungdong>
-                    <Seoul>서울시</Seoul>
+                    <Tab
+                        active={tabName === 'Sungdong'}
+                        onClick={() => showTabName('Sungdong')}
+                    >
+                        성동구
+                    </Tab>
+                    <Tab
+                        active={tabName === 'Seoul'}
+                        onClick={() => showTabName('Seoul')}
+                    >
+                        서울시
+                    </Tab>
                 </ProgramNav>
-                <ProgramBoxWrap>
-                    <ProgramBox>프로그램</ProgramBox>
-                    <ProgramBox>프로그램</ProgramBox>
-                    <ProgramBox>프로그램</ProgramBox>
-                    <ProgramBox>프로그램</ProgramBox>
-                    <ProgramBox>프로그램</ProgramBox>
-                    <ProgramBox>프로그램</ProgramBox>
-                    <ProgramBox>프로그램</ProgramBox>
-                    <ProgramBox>프로그램</ProgramBox>
-                    <ProgramBox>프로그램</ProgramBox>
-                </ProgramBoxWrap>
+                { tabName === 'Sungdong' ?
+                    <ProgramBoxWrap>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                    </ProgramBoxWrap>
+                    :
+                    <ProgramBoxWrap>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                        <ProgramBox>프로그램</ProgramBox>
+                    </ProgramBoxWrap>
+                }
             </EducationBody>
             <Footer />
         </Container>
