@@ -29,7 +29,7 @@ const BoxTop = styled.div`
 
 const BackBtn = styled.img`
   position: absolute;
-  left: 5px;
+  left: 5px; 
 `
 
 const BoxName = styled.div`
@@ -74,6 +74,7 @@ const Button = styled.button`
   margin-bottom: 10px;
   font-size: 17px;
 `
+
 const Join = () => {
     return(
         <Container>

@@ -9,7 +9,7 @@ const Container = styled.div`
 
 const HomeTopBanner = styled.div`
   margin: 0 8vw;
-  height: 250px;
+  height: 400px;
   background-color: #0AAAEF;
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ const TopBannerText = styled.p`
 
 const HomeBottomBanner = styled.div`
   margin: 0 8vw;
-  height: 400px;
+  height: 600px;
   background-color: #C7CAD1;
   display: flex;
   justify-content: center;
